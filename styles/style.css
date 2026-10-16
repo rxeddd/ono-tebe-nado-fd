@@ -1,4 +1,8 @@
-.header  {
+* {
+  text-underline-offset: 4px;
+}
+
+.header {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   align-items: center;
@@ -160,7 +164,7 @@
 }
 
 .card__title,
-.card__text{
+.card__text {
   position: relative;
   z-index:2;
 }
