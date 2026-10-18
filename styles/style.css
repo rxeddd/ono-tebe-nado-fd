@@ -1,6 +1,6 @@
 .header {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: 1fr min-content 1fr;
   align-items: center;
   padding: 92px 50px 96px 50px;
   background-color: white;
@@ -9,7 +9,6 @@
 .header__logo {
   display: block;
   width: 135px;
-  margin-left: 42px;
 }
 
 .header__links-list {
@@ -18,8 +17,8 @@
   width: 391px;
   font-size: 18px;
   line-height: 100%;
-  list-style: circle;
   text-underline-offset: 4px;
+  list-style: circle;
 }
 
 .header__link_active {
@@ -35,12 +34,14 @@
   flex-direction: column;
   justify-self: start;
   align-items: flex-start;
-  max-width: 240px;
   font-size: 18px;
   font-style: normal;
   line-height: 24px;
   text-underline-offset: 4px;
-  margin-left: 50px;
+}
+
+.header__address {
+  margin-left: 193px;
 }
 
 .cover {
@@ -60,12 +61,12 @@
 }
 
 .cover_title {
-  padding-top: 163px;
-  margin-left: 50px;
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
   width: 1000px;
+  margin-left: 50px;
+  padding-top: 163px;
   color: white;
   font-size: 100px;
   letter-spacing: 30.5px;
@@ -73,43 +74,42 @@
 }
 
 .aligned-text_left {
-  margin-bottom: 15px;
   z-index: 2;
+  margin-bottom: 15px;
 }
 
 .aligned-text_center {
+  z-index: 2;
   align-self: center;
   margin-bottom: 17px;
   margin-left: 32px;
-  z-index: 2;
 }
 
 .aligned-text_right {
+  z-index: 2;
   margin-right: -32px;
   margin-left: auto;
-  z-index: 2;
 }
 
 .description {
-  left: 50px;
-  margin: 106px 0 0 50px;
   display: flex;
   justify-content: space-between;
   width: 1000px;
-  height: 51px;
+  margin: 106px 0 0 50px;
   color: white;
   font-size: 22px;
   text-transform: uppercase;
 }
 
 .cover__description-text {
+  z-index: 2;
   align-self: center;
   line-height: 28px;
   word-spacing: 19px;
-  z-index: 2;
 }
 
 .bet-button {
+  z-index: 2;
   justify-self: end;
   width: 256px;
   height: 51px;
@@ -117,7 +117,6 @@
   color: white;
   text-transform: uppercase;
   background-color: transparent;
-  z-index: 2;
 }
 
 .lots {
@@ -153,8 +152,8 @@
 .card__title {
   font-size: 22px;
   text-decoration: underline;
-  text-transform: uppercase;
   text-underline-offset: 4px;
+  text-transform: uppercase;
 }
 
 .card__text {
@@ -214,7 +213,7 @@
   align-items: center;
   width: 240px;
   height: 240px;
-  margin-top: 37px;
+  margin-top: 34px;
   border-radius: 50%;
   overflow: hidden;
   background-color: black;
@@ -242,16 +241,21 @@
 
 .footer {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: 1fr 1fr 1fr;
   align-items: start;
+  min-height: 190px;
+}
+
+.footer__address {
+  margin-left: 52px;
 }
 
 .footer__menu-list {
   display: flex;
   flex-direction: column;
   align-items: center;
-  list-style: none;
   text-underline-offset: 4px;
+  list-style: none;
 }
 
 .footer__menu-link {
